@@ -1,0 +1,8 @@
+node_modules
+.next
+.git
+dev-output.txt
+data
+cli
+.env*
+deploy*.py

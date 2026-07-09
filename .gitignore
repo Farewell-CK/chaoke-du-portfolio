@@ -1,0 +1,30 @@
+# dependencies
+node_modules/
+
+# next.js build output
+.next/
+out/
+
+# tool build artifacts
+public/tools/
+
+# environment
+.env
+.env.*
+!.env.example
+
+# data
+data/
+
+# docker
+letsencrypt/
+certbot/
+
+# misc
+*.tar.gz
+.DS_Store
+*.log
+
+# ide
+.vscode/
+.idea/

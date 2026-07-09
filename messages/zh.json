@@ -1,0 +1,106 @@
+{
+  "Nav": {
+    "home": "首页",
+    "projects": "项目",
+    "blog": "博客",
+    "resources": "资源库",
+    "about": "关于",
+    "contact": "联系",
+    "guestbook": "留言板",
+    "search": "搜索"
+  },
+  "Hero": {
+    "greeting": "你好，我是",
+    "name": "杜朝科",
+    "role": "研究生在读",
+    "tagline": "探索 AI 与科学的交叉领域",
+    "cta": "查看项目",
+    "ctaSecondary": "阅读博客"
+  },
+  "Home": {
+    "featuredProjects": "精选项目",
+    "featuredProjectsDesc": "我构建的工具和应用",
+    "latestPosts": "最新文章",
+    "latestPostsDesc": "关于技术和研究的思考",
+    "viewAll": "查看全部"
+  },
+  "Projects": {
+    "title": "项目",
+    "subtitle": "我构建的工具和应用",
+    "open": "打开",
+    "tryNow": "立即体验",
+    "type": {
+      "builtin": "内置工具",
+      "standalone": "独立应用"
+    }
+  },
+  "Blog": {
+    "title": "博客",
+    "subtitle": "关于技术和研究的思考",
+    "readMore": "阅读更多",
+    "publishedOn": "发布于",
+    "minRead": "分钟阅读"
+  },
+  "Resources": {
+    "title": "资源库",
+    "subtitle": "我推荐的书籍、论文和工具",
+    "category": "分类",
+    "all": "全部"
+  },
+  "About": {
+    "title": "关于我",
+    "bio": "我是一名研究生，热衷于 AI 辅助研究。我构建帮助研究者更高效地阅读、理解和连接学术论文的工具。",
+    "skills": "技能",
+    "experience": "经历",
+    "education": "教育"
+  },
+  "Contact": {
+    "title": "联系我",
+    "subtitle": "欢迎随时联系",
+    "email": "邮箱",
+    "github": "GitHub",
+    "sendMessage": "发送消息",
+    "name": "姓名",
+    "message": "消息",
+    "namePlaceholder": "你的名字",
+    "messagePlaceholder": "你的消息...",
+    "sent": "消息已发送！谢谢。",
+    "send": "发送"
+  },
+  "Messages": {
+    "title": "留言板",
+    "subtitle": "给我留个言吧",
+    "placeholder": "写点什么...",
+    "submit": "发布",
+    "anonymous": "匿名",
+    "approved": "已通过",
+    "pending": "待审核"
+  },
+  "Footer": {
+    "rights": "保留所有权利。",
+    "builtWith": "使用 Next.js 构建",
+    "icp": "豫ICP备2025118086号-3"
+  },
+  "Admin": {
+    "title": "管理后台",
+    "login": "登录",
+    "logout": "退出",
+    "username": "用户名",
+    "password": "密码",
+    "messages": "留言",
+    "resources": "资源",
+    "projects": "项目",
+    "stats": "统计",
+    "approve": "通过",
+    "delete": "删除",
+    "edit": "编辑",
+    "save": "保存",
+    "cancel": "取消"
+  },
+  "Common": {
+    "loading": "加载中...",
+    "error": "出错了",
+    "notFound": "未找到",
+    "back": "返回"
+  }
+}

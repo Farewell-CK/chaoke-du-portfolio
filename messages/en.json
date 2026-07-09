@@ -1,0 +1,106 @@
+{
+  "Nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "blog": "Blog",
+    "resources": "Resources",
+    "about": "About",
+    "contact": "Contact",
+    "guestbook": "Guestbook",
+    "search": "Search"
+  },
+  "Hero": {
+    "greeting": "Hi, I'm",
+    "name": "Chaoke Du",
+    "role": "Graduate Student",
+    "tagline": "Exploring the intersection of AI and science.",
+    "cta": "View Projects",
+    "ctaSecondary": "Read Blog"
+  },
+  "Home": {
+    "featuredProjects": "Featured Projects",
+    "featuredProjectsDesc": "Tools and applications I've built",
+    "latestPosts": "Latest Posts",
+    "latestPostsDesc": "Thoughts on tech and research",
+    "viewAll": "View all"
+  },
+  "Projects": {
+    "title": "Projects",
+    "subtitle": "Tools and applications I've built",
+    "open": "Open",
+    "tryNow": "Try Now",
+    "type": {
+      "builtin": "Built-in Tool",
+      "standalone": "Standalone App"
+    }
+  },
+  "Blog": {
+    "title": "Blog",
+    "subtitle": "Thoughts on tech and research",
+    "readMore": "Read more",
+    "publishedOn": "Published on",
+    "minRead": "min read"
+  },
+  "Resources": {
+    "title": "Resources",
+    "subtitle": "Books, papers, and tools I recommend",
+    "category": "Category",
+    "all": "All"
+  },
+  "About": {
+    "title": "About Me",
+    "bio": "I'm a graduate student passionate about AI-assisted research. I build tools that help researchers read, understand, and connect with academic papers more effectively.",
+    "skills": "Skills",
+    "experience": "Experience",
+    "education": "Education"
+  },
+  "Contact": {
+    "title": "Get in Touch",
+    "subtitle": "Feel free to reach out",
+    "email": "Email",
+    "github": "GitHub",
+    "sendMessage": "Send Message",
+    "name": "Name",
+    "message": "Message",
+    "namePlaceholder": "Your name",
+    "messagePlaceholder": "Your message...",
+    "sent": "Message sent! Thank you.",
+    "send": "Send"
+  },
+  "Messages": {
+    "title": "Guestbook",
+    "subtitle": "Leave a message for me",
+    "placeholder": "Write something...",
+    "submit": "Post",
+    "anonymous": "Anonymous",
+    "approved": "Approved",
+    "pending": "Pending"
+  },
+  "Footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Next.js",
+    "icp": "豫ICP备2025118086号-3"
+  },
+  "Admin": {
+    "title": "Admin Dashboard",
+    "login": "Login",
+    "logout": "Logout",
+    "username": "Username",
+    "password": "Password",
+    "messages": "Messages",
+    "resources": "Resources",
+    "projects": "Projects",
+    "stats": "Analytics",
+    "approve": "Approve",
+    "delete": "Delete",
+    "edit": "Edit",
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "Common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "notFound": "Not found",
+    "back": "Back"
+  }
+}

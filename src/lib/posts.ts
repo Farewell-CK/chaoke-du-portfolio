@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
+import remarkGfm from "remark-gfm";
 import html from "remark-html";
 
 const blogDirectory = path.join(process.cwd(), "content", "blog");
@@ -51,7 +52,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  const processedContent = remark().use(html).processSync(content);
+  const processedContent = remark().use(remarkGfm).use(html).processSync(content);
   const contentHtml = processedContent.toString();
   const readingTime = calculateReadingTime(content);
 

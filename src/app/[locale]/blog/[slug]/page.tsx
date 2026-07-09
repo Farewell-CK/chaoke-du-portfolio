@@ -82,7 +82,12 @@ export default async function BlogDetailPage({
               [&_blockquote]:border-l-2 [&_blockquote]:border-accent [&_blockquote]:pl-4 [&_blockquote]:text-muted [&_blockquote]:italic
               [&_a]:text-accent [&_a]:underline [&_a]:hover:text-accent-violet
               [&_hr]:border-border [&_hr]:my-8
-              [&_strong]:text-foreground [&_strong]:font-semibold"
+              [&_strong]:text-foreground [&_strong]:font-semibold
+              [&_table]:w-full [&_table]:border-collapse [&_table]:mb-4 [&_table]:text-sm
+              [&_thead]:border-b [&_thead]:border-border
+              [&_th]:text-left [&_th]:font-semibold [&_th]:text-foreground [&_th]:px-4 [&_th]:py-2 [&_th]:border [&_th]:border-border
+              [&_td]:px-4 [&_td]:py-2 [&_td]:border [&_td]:border-border [&_td]:text-secondary
+              [&_tr]:border-border [&_tr:hover]:bg-card/50"
             dangerouslySetInnerHTML={{ __html: post.contentHtml }}
           />
         </article>

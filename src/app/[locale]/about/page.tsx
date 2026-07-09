@@ -35,9 +35,15 @@ export default async function AboutPage({
   return (
     <div className="min-h-screen pt-24 pb-20 px-6 relative-z">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold mb-8 gradient-text">
-          {t("title")}
-        </h1>
+        <div className="mb-12">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="h-px w-12 bg-gradient-to-r from-transparent to-accent/50" />
+            <span className="text-xs uppercase tracking-[0.3em] text-accent font-mono">About</span>
+          </div>
+          <h1 className="text-4xl md:text-6xl font-bold gradient-text">
+            {t("title")}
+          </h1>
+        </div>
 
         <div className="glass rounded-2xl p-8 mb-12 gradient-border">
           <p className="text-lg text-secondary leading-relaxed">{t("bio")}</p>

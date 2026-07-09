@@ -17,7 +17,9 @@ export default async function HomePage({
   return (
     <>
       <Hero />
+      <div className="section-divider" />
       <FeaturedProjects />
+      <div className="section-divider" />
       <LatestPosts posts={latestPosts} />
     </>
   );

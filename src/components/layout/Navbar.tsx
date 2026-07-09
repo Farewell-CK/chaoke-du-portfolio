@@ -50,21 +50,28 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link
           href="/"
-          className="text-lg font-bold gradient-text tracking-tight"
+          className="text-lg font-bold tracking-tight"
         >
-          DC
+          <span className="gradient-text">CD</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-1">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="px-3 py-2 text-sm text-secondary hover:text-accent transition-colors rounded-lg hover:bg-white/5"
-            >
-              {item.label}
-            </Link>
-          ))}
+          {navItems.map((item) => {
+            const isActive = pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href));
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`px-3 py-2 text-sm transition-colors rounded-lg ${
+                  isActive
+                    ? "nav-active text-accent"
+                    : "text-secondary hover:text-accent hover:bg-white/5"
+                }`}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
         </div>
 
         <div className="flex items-center gap-2">

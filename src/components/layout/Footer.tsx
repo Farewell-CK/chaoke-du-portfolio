@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Mail } from "lucide-react";
 
-function GithubIcon({ size = 20 }: { size?: number }) {
+function GithubIcon({ size = 18 }: { size?: number }) {
   return (
     <svg
       width={size}
@@ -23,37 +23,47 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border glass relative-z">
-      <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
-        <div className="text-sm text-muted text-center md:text-left">
-          <div>© {year} Chaoke Du. {t("rights")}</div>
-          <a
-            href="https://beian.miit.gov.cn/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs hover:text-accent transition-colors"
-          >
-            {t("icp")}
-          </a>
-        </div>
-        <div className="text-xs text-muted">{t("builtWith")}</div>
-        <div className="flex items-center gap-4">
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted hover:text-accent transition-colors"
-            aria-label="GitHub"
-          >
-            <GithubIcon size={20} />
-          </a>
-          <a
-            href="mailto:contact@example.com"
-            className="text-muted hover:text-accent transition-colors"
-            aria-label="Email"
-          >
-            <Mail size={20} />
-          </a>
+    <footer className="border-t border-border glass relative-z mt-auto">
+      <div className="max-w-7xl mx-auto px-6 py-10">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="text-sm text-muted text-center md:text-left">
+            <div className="mb-1">
+              <span className="gradient-text font-bold">Chaoke Du</span>
+              <span className="mx-2 opacity-30">|</span>
+              <span>© {year} {t("rights")}</span>
+            </div>
+            <a
+              href="https://beian.miit.gov.cn/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs hover:text-accent transition-colors"
+            >
+              {t("icp")}
+            </a>
+          </div>
+
+          <div className="text-xs text-muted/60">
+            {t("builtWith")}
+          </div>
+
+          <div className="flex items-center gap-3">
+            <a
+              href="https://github.com/Farewell-CK"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-9 h-9 rounded-lg glass flex items-center justify-center text-muted hover:text-accent hover:border-accent/30 transition-all"
+              aria-label="GitHub"
+            >
+              <GithubIcon size={18} />
+            </a>
+            <a
+              href="mailto:contact@example.com"
+              className="w-9 h-9 rounded-lg glass flex items-center justify-center text-muted hover:text-accent hover:border-accent/30 transition-all"
+              aria-label="Email"
+            >
+              <Mail size={18} />
+            </a>
+          </div>
         </div>
       </div>
     </footer>

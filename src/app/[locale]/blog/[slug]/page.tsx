@@ -30,27 +30,27 @@ export default async function BlogDetailPage({
       <div className="max-w-3xl mx-auto">
         <Link
           href="/blog"
-          className="inline-flex items-center gap-1 text-sm text-muted hover:text-accent transition-colors mb-8"
+          className="inline-flex items-center gap-1 text-sm text-muted hover:text-accent transition-colors mb-12"
         >
           <ArrowLeft size={16} />
           {tCommon("back")}
         </Link>
 
         <article>
-          <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-tight">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
             {post.title[loc] || post.title.en}
           </h1>
 
-          <div className="flex items-center gap-4 text-sm text-muted mb-8">
-            <span className="flex items-center gap-1">
-              <Calendar size={14} />
+          <div className="flex items-center gap-4 text-sm text-muted mb-8 pb-8 border-b border-border">
+            <span className="flex items-center gap-1.5">
+              <Calendar size={14} className="text-accent" />
               {new Date(post.date).toLocaleDateString(
                 loc === "zh" ? "zh-CN" : "en-US",
                 { year: "numeric", month: "long", day: "numeric" }
               )}
             </span>
-            <span className="flex items-center gap-1">
-              <Clock size={14} />
+            <span className="flex items-center gap-1.5">
+              <Clock size={14} className="text-accent" />
               {post.readingTime} {t("minRead")}
             </span>
           </div>
